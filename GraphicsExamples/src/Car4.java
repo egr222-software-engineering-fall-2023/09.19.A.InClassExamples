@@ -6,12 +6,16 @@ public class Car4 {
         panel.setBackground(Color.LIGHT_GRAY);
 
         Graphics g = panel.getGraphics();
-        drawCar(g, 10, 30, 100);
+        drawCar(g, 10, 30);
         drawCar(g, 150, 10, 50);
 
         for (int i = 0; i < 5; i++) {
             drawCar(g, 10 + i * 50, 130, 40);
         }
+    }
+
+    public static void drawCar(Graphics g, int x, int y) {
+        drawCar(g, x, y, 100);
     }
 
 public static void drawCar(Graphics g, int x, int y, int width) {
